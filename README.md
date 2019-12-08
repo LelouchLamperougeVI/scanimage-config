@@ -22,9 +22,13 @@ Once everything is installed, fire up `scanimage` in MATLAB and follow the setup
 This is where you can add your custom scripts/plugins (such as the online registration and alignment from the Janelia group). Keep default values (15 um/deg scan angle).
 
 ## Shutters
-Shutters for Laser 1 and Laser 2 are separately controlled by PFI12 on DAQ4 and DAQ 5 respectively (wired to USER2).
+Shutters for Laser 1 and Laser 2 are separately controlled by PFI12 on DAQ 5 and DAQ 4 respectively (wired to USER2).
 
 ## Power modulation
 Pockel cells for Laser 1 and Laser 2 are controlled by AO0 and AO1 on DAQ 6 respectively.
 
 ## Scanners
+Scanner currently in Res/Galvo configuration. Set aux box to DAQ 5. All settings can remain as default. For Galvo, only the Y axis needs to be set. Angular range, volts per degree and park degree are 15, 1 and -8 respectively. Angular range for resonant is 15. Default setting for everything else. Don't forget that the PMTs are inverted.
+
+## Motor Stage
+Choose Sutter MP-285 from the list of devices and invert the Z axis.

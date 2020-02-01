@@ -32,3 +32,8 @@ Scanner currently in Res/Galvo configuration. Set aux box to DAQ 5. All settings
 
 ## Motor Stage
 Choose Sutter MP-285 from the list of devices and invert the Z axis.
+
+## Piezo Stage
+We're working with a nPFocus400 piezo stage with a range of 400 um, coupled with an LC400 Controller. Connect the command input and sensor output to the analogue BNC ports on DAQ 4. Set min/max command voltages to -10 to 10 and the range to -200 to 200 um. Plug the controller via USB to the computer and install the drivers provided on CD. To get the COM port, virtual serial communications need to be enabled first. In device manager, right click on "properties" on "USB Serial Converter" under "Universal Serial Bus controllers". Under the Advanced tab, enable "Load VCP". Unplug, wait couple seconds, plug back in. You should see a new COM port.
+
+The stage was factory calibrated. However, recalibration is advised for maximum performance with the objective and tilt angle. This can be done with the provided software. Might need to go back-and-forth a couple times between ScanImage and nPControl to optimize the settings.
